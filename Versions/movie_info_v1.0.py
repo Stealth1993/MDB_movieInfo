@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
-import webbrowser
 from imdb import Cinemagoer
 
 def get_movie_info():
@@ -51,18 +50,6 @@ def get_movie_info():
 
     # Show the movie information in a message box
     messagebox.showinfo("Movie Information", info)
-
-    # Get the poster URL and open it in a browser if available
-    poster_url = movie_info.get('full-size cover url')
-    if poster_url:
-        open_poster_in_browser(poster_url)
-
-def open_poster_in_browser(poster_url):
-    try:
-        # Open the poster image in the default web browser
-        webbrowser.open(poster_url)
-    except Exception as e:
-        messagebox.showerror("Error", f"Failed to open the poster: {e}")
 
 if __name__ == "__main__":
     get_movie_info()
