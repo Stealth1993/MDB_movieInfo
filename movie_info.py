@@ -53,6 +53,7 @@ def get_movie_info():
     messagebox.showinfo("Movie Information", info)
 
     # Get the poster URL and open it in a browser if available
+    #This block can be commented out for better optimization and no link to browser interaction.
     poster_url = movie_info.get('full-size cover url')
     if poster_url:
         open_poster_in_browser(poster_url)
