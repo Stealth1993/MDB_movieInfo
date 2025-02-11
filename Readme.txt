@@ -46,3 +46,4 @@ pyinstaller --onefile --windowed --noconsole --icon=movie.ico movie_info.py
 This project is open-source and free to use, modify, and share! 🏆✨
 
 📩 Have feedback or feature requests? Let’s chat! 🎉
+
